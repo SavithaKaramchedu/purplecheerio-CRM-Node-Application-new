@@ -1,0 +1,14 @@
+{
+  "services": 
+  {
+    "sampleservice": {
+      "protocol": "https",
+      "port": 7777,
+      "hostname": "localhost",
+      "description": "REST END POINT For Sample Service.",
+      "configfilepath": "./appconfig.json",
+      "security": "basic",
+	  "certPath" : "./localhosttest"
+    }
+  }
+}

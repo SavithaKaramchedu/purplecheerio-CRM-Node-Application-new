@@ -1,0 +1,344 @@
+{
+  "servicename": "sampleservice",
+  "routes": [
+    {
+      "route": "/images",
+      "type": "static",
+      "configured": true,
+      "routeclass": "./images",
+      "description": "app specific images are served from the directory ./images under route /images"
+    },
+    {
+      "route": "/edit/images",
+      "type": "static",
+      "configured": true,
+      "routeclass": "./images",
+      "description": "app specific images are served from the directory ./images under route /images"
+    },
+ 
+ 
+    {
+      "route":"/",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getLoginPage",
+      "description": "Login Page with username and password authentication",
+      "examples": [
+        {
+          "param": "/"
+        }
+      ]
+    },
+    {
+      "route":"/validate",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "validateLogin",
+      "description": "Validate the login credentials",
+      "examples": [
+        {
+          "param": "/"
+        }
+      ]
+    },
+    {
+      "route":"/home",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getHomePage",
+      "description": "LIst lead or Add lead page information",
+      "examples": [
+        {
+          "param": "/home"
+        }
+      ]
+    },
+    {
+      "route":"/Lead",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getLeadPage",
+      "description": "LIst lead or Add lead page information",
+      "examples": [
+        {
+          "param": "/Lead"
+        }
+      ]
+    },
+    {
+      "route":"/emp",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getEmpPage",
+      "description": "LIst Employee",
+      "examples": [
+        {
+          "param": "/emp"
+        }
+      ]
+    },
+    {
+      "route":"/logout",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getBackPage",
+      "description": "Logout feature",
+      "examples": [
+        {
+          "param": "/logout"
+        }
+      ]
+    },
+    {
+      "route":"/add",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "addLeadPage",
+      "description": "Get add player interface displayed",
+      "examples": [
+        {
+          "param": "/add"
+        }
+      ]
+    },
+    {
+      "route":"/addContact",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "addContactPage",
+      "description": "Get add Contact interface displayed",
+      "examples": [
+        {
+          "param": "/addContact"
+        }
+      ]
+    },
+    
+    {
+      "route":"/showContact",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "ContactPage",
+      "description": "Get add Contact interface displayed",
+      "examples": [
+        {
+          "param": "/showContact"
+        }
+      ]
+    },
+    {
+      "route":"/addAccount",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "addAccountPage",
+      "description": "Get add Account interface displayed",
+      "examples": [
+        {
+          "param": "/addAccount"
+        }
+      ]
+    },
+    
+    {
+      "route":"/showAccount",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getAccountPage",
+      "description": "Get add Account interface displayed",
+      "examples": [
+        {
+          "param": "/showAccount"
+        }
+      ]
+    },
+    {
+      "route":"/addOpportunity",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "addOpportunity",
+      "description": "Get add Opportunity interface displayed",
+      "examples": [
+        {
+          "param": "/addOpportunity"
+        }
+      ]
+    },
+    
+    {
+      "route":"/showOpportunity",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "getOpportunityPage",
+      "description": "Get add Opportunity interface displayed",
+      "examples": [
+        {
+          "param": "/showOpportunity"
+        }
+      ]
+    },
+    {
+      "route":"/adding",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "addLead",
+      "description": "Add of new lead",
+      "examples": [
+        {
+          "param": "/adding"
+        }
+      ]
+    },
+    {
+      "route":"/edit/:id",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "editLeadPage",
+      "description": "Get details of lead to be edited",
+      "examples": [
+        {
+          "param": "/edit/:id"
+        }
+      ]
+    },
+    {
+      "route":"/edit/:id",
+      "type":"post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "editLead",
+      "description": "Edit lead choosen",
+      "examples": [
+        {
+          "param": "/edit/:id"
+        }
+      ]
+    },
+    {
+      "route":"/delete/:id",
+      "type":"get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "deleteLead",
+      "description": "Delete specific lead details choosen",
+      "examples": [
+        {
+          "param": "/delete/:id"
+        }
+      ]
+    },
+ 
+
+      {
+      "route": "/sampleservice/something/:value1/:value2",
+      "type": "get",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "RouteGetSomething",
+      "description": "Hello world",
+      "examples": [
+        {
+          "param": "/sampleservice/something/ltts/11"
+        }
+      ],
+      "paramschema": {
+        "type": "object",
+        "required": [
+          "value1",
+          "value2"
+        ],
+        "properties": {
+          "value1": {
+            "description": "value1 is string e.g. foo",
+            "type": "string",
+            "minLength":4,
+            "maxLength":6
+            
+          },
+          "value2": {
+            "description": "value2 is number e.g. 100",
+            "type": "integer",
+            "minimum":10,
+            "maximum":15
+          }
+        }
+      }
+    },
+    {
+      "route": "/sampleservice/something/:value1/:value2",
+      "type": "post",
+      "configured": true,
+      "routeclass": "./sampleservice.js",
+      "routefunction": "RoutePostSomething",
+      "description": "Hello world",
+      "examples": [
+          {
+          "param": "/sampleservice/something/foo/100",
+          "payload":{
+            "value3":{"value5":"bar"},
+            "value4":"blah"
+          }
+        }
+      ],
+      "paramschema": {
+        "type": "object",
+        "required": [
+          "value1",
+          "value2"
+        ],
+        "properties": {
+          "value1": {
+            "description": "value1 is string e.g. foo",
+            "type": "string"
+    
+
+          },
+          "value2": {
+            "description": "value2 is number e.g. 100",
+            "type": "integer"
+          }
+        }
+      },
+      "bodyschema": {
+        "type": "object",
+        "required": [
+          "value3",
+          "value4"
+        ],
+        "properties": {
+          "value3": {
+            "description": "value3 is an object e.g. {'value5':'bar'}",
+            "type": "object",
+            "required":[
+            "value5" 
+            ],
+            "properties":{
+              "value5":{
+                "description":"value5 is a string inside the value3 object e.g. bar",
+                "type":"string"
+              }
+            }
+          },
+          "value4": {
+            "description": "value4 is string e.g. blah",
+            "type": "string"
+          }
+        }
+      }
+    }
+  ] 
+}

@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "errorBeacon": "bam.nr-data.net", "licenseKey": "abfc275d5d", "applicationID": "56590354", "transactionName": "MlRaZEMDVkJUURYLXAsedWZyTXVUQVMGA0cEfVFDRTRRVEJxDQxHF15UXFQQF3hbVgca", "queueTime": 0, "applicationTime": 23, "agent": "", "atts": "" }</script>
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}), __nr_require = function (e, n, t) { function r(t) { if (!n[t]) { var o = n[t] = { exports: {} }; e[t][0].call(o.exports, function (n) { var o = e[t][1][n]; return r(o || n) }, o, o.exports) } return n[t].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < t.length; o++)r(t[o]); return r }({ 1: [function (e, n, t) { function r() { } function o(e, n, t) { return function () { return i(e, [c.now()].concat(u(arguments)), n ? null : this, t), n ? void 0 : this } } var i = e("handle"), a = e(3), u = e(4), f = e("ee").get("tracer"), c = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], d = "api-", l = d + "ixn-"; a(p, function (e, n) { s[n] = o(d + n, !0, "api") }), s.addPageAction = o(d + "addPageAction", !0), s.setCurrentRouteName = o(d + "routeName", !0), n.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, n) { var t = {}, r = this, o = "function" == typeof n; return i(l + "tracer", [c.now(), e, t], r), function () { if (f.emit((o ? "" : "no-") + "fn-start", [c.now(), r, o], t), o) try { return n.apply(this, arguments) } catch (e) { throw f.emit("fn-err", [arguments, this, e], t), e } finally { f.emit("fn-end", [c.now()], t) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, n) { m[n] = o(l + n) }), newrelic.noticeError = function (e, n) { "string" == typeof e && (e = new Error(e)), i("err", [e, c.now(), !1, n]) } }, {}], 2: [function (e, n, t) { function r(e, n) { if (!o) return !1; if (e !== o) return !1; if (!n) return !0; if (!i) return !1; for (var t = i.split("."), r = n.split("."), a = 0; a < r.length; a++)if (r[a] !== t[a]) return !1; return !0 } var o = null, i = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var u = navigator.userAgent, f = u.match(a); f && u.indexOf("Chrome") === -1 && u.indexOf("Chromium") === -1 && (o = "Safari", i = f[1]) } n.exports = { agent: o, version: i, match: r } }, {}], 3: [function (e, n, t) { function r(e, n) { var t = [], r = "", i = 0; for (r in e) o.call(e, r) && (t[i] = n(r, e[r]), i += 1); return t } var o = Object.prototype.hasOwnProperty; n.exports = r }, {}], 4: [function (e, n, t) { function r(e, n, t) { n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0); for (var r = -1, o = t - n || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = e[n + r]; return i } n.exports = r }, {}], 5: [function (e, n, t) { n.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, n, t) { function r() { } function o(e) { function n(e) { return e && e instanceof r ? e : e ? f(e, u, i) : i() } function t(t, r, o, i) { if (!d.aborted || i) { e && e(t, r, o); for (var a = n(o), u = v(t), f = u.length, c = 0; c < f; c++)u[c].apply(a, r); var p = s[y[t]]; return p && p.push([b, t, r, a]), a } } function l(e, n) { h[e] = v(e).concat(n) } function m(e, n) { var t = h[e]; if (t) for (var r = 0; r < t.length; r++)t[r] === n && t.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return p[e] = p[e] || o(t) } function w(e, n) { c(e, function (e, t) { n = n || "feature", y[t] = n, n in s || (s[n] = []) }) } var h = {}, y = {}, b = { on: l, addEventListener: l, removeEventListener: m, emit: t, get: g, listeners: v, context: n, buffer: w, abort: a, aborted: !1 }; return b } function i() { return new r } function a() { (s.api || s.feature) && (d.aborted = !0, s = d.backlog = {}) } var u = "nr@context", f = e("gos"), c = e(3), s = {}, p = {}, d = n.exports = o(); d.backlog = s }, {}], gos: [function (e, n, t) { function r(e, n, t) { if (o.call(e, n)) return e[n]; var r = t(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, n, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return e[n] = r, r } var o = Object.prototype.hasOwnProperty; n.exports = r }, {}], handle: [function (e, n, t) { function r(e, n, t, r) { o.buffer([e], r), o.emit(e, n, t) } var o = e("ee").get("handle"); n.exports = r, r.ee = o }, {}], id: [function (e, n, t) { function r(e) { var n = typeof e; return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, i, function () { return o++ }) } var o = 1, i = "nr@id", a = e("gos"); n.exports = r }, {}], loader: [function (e, n, t) { function r() { if (!E++) { var e = x.info = NREUM.info, n = l.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort(); c(y, function (n, t) { e[n] || (e[n] = t) }), f("mark", ["onload", a() + x.offset], null, "api"); var t = l.createElement("script"); t.src = "https://" + e.agent, n.parentNode.insertBefore(t, n) } } function o() { "complete" === l.readyState && i() } function i() { f("mark", ["domContent", a() + x.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (u = Math.max((new Date).getTime(), u)) - x.offset } var u = (new Date).getTime(), f = e("handle"), c = e(3), s = e("ee"), p = e(2), d = window, l = d.document, m = "addEventListener", v = "attachEvent", g = d.XMLHttpRequest, w = g && g.prototype; NREUM.o = { ST: setTimeout, SI: d.setImmediate, CT: clearTimeout, XHR: g, REQ: d.Request, EV: d.Event, PR: d.Promise, MO: d.MutationObserver }; var h = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1123.min.js" }, b = g && w && w[m] && !/CriOS/.test(navigator.userAgent), x = n.exports = { offset: u, now: a, origin: h, features: {}, xhrWrappable: b, userAgent: p }; e(1), l[m] ? (l[m]("DOMContentLoaded", i, !1), d[m]("load", r, !1)) : (l[v]("onreadystatechange", o), d[v]("onload", r)), f("mark", ["firstbyte", u], null, "api"); var E = 0, O = e(5) }, {}] }, {}, ["loader"]);</script>
+    <meta charset="utf-8">
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "errorBeacon": "bam.nr-data.net", "licenseKey": "abfc275d5d", "applicationID": "56590354", "transactionName": "MlRaZEMDVkJUURYLXAsedWZyTXVUQVMGA0cEfVFDRTRRVEJxDQxHF15UXFQQF3hbVgca", "queueTime": 0, "applicationTime": 23, "agent": "", "atts": "" }</script>
+    <script
+        type="text/javascript">window.NREUM || (NREUM = {}), __nr_require = function (e, n, t) { function r(t) { if (!n[t]) { var o = n[t] = { exports: {} }; e[t][0].call(o.exports, function (n) { var o = e[t][1][n]; return r(o || n) }, o, o.exports) } return n[t].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < t.length; o++)r(t[o]); return r }({ 1: [function (e, n, t) { function r() { } function o(e, n, t) { return function () { return i(e, [c.now()].concat(u(arguments)), n ? null : this, t), n ? void 0 : this } } var i = e("handle"), a = e(3), u = e(4), f = e("ee").get("tracer"), c = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], d = "api-", l = d + "ixn-"; a(p, function (e, n) { s[n] = o(d + n, !0, "api") }), s.addPageAction = o(d + "addPageAction", !0), s.setCurrentRouteName = o(d + "routeName", !0), n.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, n) { var t = {}, r = this, o = "function" == typeof n; return i(l + "tracer", [c.now(), e, t], r), function () { if (f.emit((o ? "" : "no-") + "fn-start", [c.now(), r, o], t), o) try { return n.apply(this, arguments) } catch (e) { throw f.emit("fn-err", [arguments, this, e], t), e } finally { f.emit("fn-end", [c.now()], t) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, n) { m[n] = o(l + n) }), newrelic.noticeError = function (e, n) { "string" == typeof e && (e = new Error(e)), i("err", [e, c.now(), !1, n]) } }, {}], 2: [function (e, n, t) { function r(e, n) { if (!o) return !1; if (e !== o) return !1; if (!n) return !0; if (!i) return !1; for (var t = i.split("."), r = n.split("."), a = 0; a < r.length; a++)if (r[a] !== t[a]) return !1; return !0 } var o = null, i = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var u = navigator.userAgent, f = u.match(a); f && u.indexOf("Chrome") === -1 && u.indexOf("Chromium") === -1 && (o = "Safari", i = f[1]) } n.exports = { agent: o, version: i, match: r } }, {}], 3: [function (e, n, t) { function r(e, n) { var t = [], r = "", i = 0; for (r in e) o.call(e, r) && (t[i] = n(r, e[r]), i += 1); return t } var o = Object.prototype.hasOwnProperty; n.exports = r }, {}], 4: [function (e, n, t) { function r(e, n, t) { n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0); for (var r = -1, o = t - n || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = e[n + r]; return i } n.exports = r }, {}], 5: [function (e, n, t) { n.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, n, t) { function r() { } function o(e) { function n(e) { return e && e instanceof r ? e : e ? f(e, u, i) : i() } function t(t, r, o, i) { if (!d.aborted || i) { e && e(t, r, o); for (var a = n(o), u = v(t), f = u.length, c = 0; c < f; c++)u[c].apply(a, r); var p = s[y[t]]; return p && p.push([b, t, r, a]), a } } function l(e, n) { h[e] = v(e).concat(n) } function m(e, n) { var t = h[e]; if (t) for (var r = 0; r < t.length; r++)t[r] === n && t.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return p[e] = p[e] || o(t) } function w(e, n) { c(e, function (e, t) { n = n || "feature", y[t] = n, n in s || (s[n] = []) }) } var h = {}, y = {}, b = { on: l, addEventListener: l, removeEventListener: m, emit: t, get: g, listeners: v, context: n, buffer: w, abort: a, aborted: !1 }; return b } function i() { return new r } function a() { (s.api || s.feature) && (d.aborted = !0, s = d.backlog = {}) } var u = "nr@context", f = e("gos"), c = e(3), s = {}, p = {}, d = n.exports = o(); d.backlog = s }, {}], gos: [function (e, n, t) { function r(e, n, t) { if (o.call(e, n)) return e[n]; var r = t(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, n, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return e[n] = r, r } var o = Object.prototype.hasOwnProperty; n.exports = r }, {}], handle: [function (e, n, t) { function r(e, n, t, r) { o.buffer([e], r), o.emit(e, n, t) } var o = e("ee").get("handle"); n.exports = r, r.ee = o }, {}], id: [function (e, n, t) { function r(e) { var n = typeof e; return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, i, function () { return o++ }) } var o = 1, i = "nr@id", a = e("gos"); n.exports = r }, {}], loader: [function (e, n, t) { function r() { if (!E++) { var e = x.info = NREUM.info, n = l.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort(); c(y, function (n, t) { e[n] || (e[n] = t) }), f("mark", ["onload", a() + x.offset], null, "api"); var t = l.createElement("script"); t.src = "https://" + e.agent, n.parentNode.insertBefore(t, n) } } function o() { "complete" === l.readyState && i() } function i() { f("mark", ["domContent", a() + x.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (u = Math.max((new Date).getTime(), u)) - x.offset } var u = (new Date).getTime(), f = e("handle"), c = e(3), s = e("ee"), p = e(2), d = window, l = d.document, m = "addEventListener", v = "attachEvent", g = d.XMLHttpRequest, w = g && g.prototype; NREUM.o = { ST: setTimeout, SI: d.setImmediate, CT: clearTimeout, XHR: g, REQ: d.Request, EV: d.Event, PR: d.Promise, MO: d.MutationObserver }; var h = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1123.min.js" }, b = g && w && w[m] && !/CriOS/.test(navigator.userAgent), x = n.exports = { offset: u, now: a, origin: h, features: {}, xhrWrappable: b, userAgent: p }; e(1), l[m] ? (l[m]("DOMContentLoaded", i, !1), d[m]("load", r, !1)) : (l[v]("onreadystatechange", o), d[v]("onload", r)), f("mark", ["firstbyte", u], null, "api"); var E = 0, O = e(5) }, {}] }, {}, ["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: grey;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: lightgrey;
+        }
+
+        ::placeholder {
+
+            font-size: 12px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            height: 50%;
+            border-radius: 0px;
+        }
+
+        textarea.form-control {
+            height: 38px;
+            width: 173%;
+        }
+
+        .form-control {
+
+            height: calc(1.00em + .75rem + 2px);
+        }
+
+        .form-control1 {
+
+            height: calc(1.00em + .75rem + 2px);
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: rgb(206, 212, 218);
+            border-color: #adb5bd;
+        }
+
+        #line {
+            background-color: lightgrey;
+            height: 17px;
+            border-radius: 2px;
+            width: 90%;
+            float: left;
+            position: relative;
+            left: 32px;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "2019-2020"
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        { y: 79.45, label: "Leads" },
+                        { y: 7.31, label: "Opportunities" },
+                        { y: 7.06, label: "Accounts" },
+                        { y: 4.91, label: "Contacts" },
+                        { y: 1.26, label: "Employees" }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+        InsWeb3AppConfigs = {
+            cdnPath: 'https://d3rqem538l0q4a.cloudfront.net'
+        }
+        function empLoad() {
+
+            var tableData = "";
+
+            var url = "https://localhost:7777/emp";
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (result) {
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        tableData = tableData + "  <tr> " +
+                            "<td >" + result[i].name + "</td>" +
+                            "<td >" + result[i].email + "</td>" +
+                            "<td >" + result[i].mobile + "</td>" +
+                            "<td >" + result[i].phone + "</td>" +
+                            "<td >" + result[i].manager + "</td>" +
+                            "</tr>";
+                        $("#checkP").text(result[i].name);
+                    }
+                    //alert(tableData);
+
+                    $("#empTable").html(tableData);
+                }
+            });
+        }
+        function AccountLoad() {
+
+            var tableData = "";
+
+            var url = "https://localhost:7777/showAccount";
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (result) {
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        tableData = tableData + "  <tr> " +
+                            "<td >" + result[i].name + "</td>" +
+                            "<td >" + result[i].prospect + "</td>" +
+                            "<td >" + result[i].parentaccount + "</td>" +
+                            "<td >" + result[i].website + "</td>" +
+                            "<td >" + result[i].accountcategory + "</td>" +
+                            "<td >" + result[i].vertical + "</td>" +
+                            "<td >" + result[i].country + "</td>" +
+                            "<td >" + result[i].city + "</td>" +
+                            "<td >" + result[i].state + "</td>" +
+                            "<td >" + result[i].owner + "</td>" +
+                            "</tr>";
+
+                    }
+                    // alert(tableData);
+
+                    $("#accountTable").html(tableData);
+                }
+            });
+        }
+        function contactLoad() {
+
+            var tableData = "";
+
+            var url = "https://localhost:7777/showContact";
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (result) {
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        tableData = tableData + "  <tr> " +
+                            "<td >" + result[i].firstname + "</td>" +
+                            "<td >" + result[i].lastname + "</td>" +
+                            "<td >" + result[i].account + "</td>" +
+                            "<td >" + result[i].jobtitle + "</td>" +
+                            "<td >" + result[i].function + "</td>" +
+                            "<td >" + result[i].department + "</td>" +
+                            "<td >" + result[i].phone + "</td>" +
+                            "<td >" + result[i].city + "</td>" +
+                            "<td >" + result[i].fax + "</td>" +
+                            "<td >" + result[i].mobile + "</td>" +
+                            "<td >" + result[i].email + "</td>" +
+                            "</tr>";
+
+                    }
+                    //alert(tableData);
+
+                    $("#contactTable").html(tableData);
+                }
+            });
+        }
+        function leadLoad() {
+
+            var tableData = "";
+
+            var url = "https://localhost:7777/Lead";
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (result) {
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        tableData = tableData + "  <tr> " +
+                            "<td >" + result[i].id + "</td>" +
+                            "<td >" + result[i].first_name + "</td>" +
+                            "<td >" + result[i].last_name + "</td>" +
+                            "<td >" + result[i].position + "</td>" +
+                            "<td >" + result[i].number + "</td>" +
+                            "<td >" + result[i].user_name + "</td>" +
+                            "</tr>";
+
+                    }
+                    //alert(tableData);
+
+                    $("#leadTable").html(tableData);
+                }
+            });
+        }
+        function opportunityLoad() {
+
+            var tableData = "";
+
+            var url = "https://localhost:7777/showOpportunity";
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (result) {
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        tableData = tableData + "  <tr> " +
+                            "<td >" + result[i].name + "</td>" +
+                            "<td >" + result[i].account + "</td>" +
+                            "<td >" + result[i].primarycontact + "</td>" +
+                            "<td >" + result[i].source + "</td>" +
+                            "<td >" + result[i].exceptedvalue + "</td>" +
+                            "<td >" + result[i].salescycle + "</td>" +
+                            "<td >" + result[i].salesphase + "</td>" +
+                            "<td >" + result[i].probability + "</td>" +
+                            "<td >" + result[i].forecastcategory + "</td>" +
+                            "<td >" + result[i].category + "</td>" +
+                            "<td >" + result[i].owner + "</td>" +
+                            "</tr>";
+
+                    }
+                    //alert(tableData);
+
+                    $("#opportunityTable").html(tableData);
+                }
+            });
+        }
+    </script>
+    <link href="https://d3rqem538l0q4a.cloudfront.net/bundles/styles/kendo.min.css?v=dd26f0f1f8de38f41959d397aff1d9c4"
+        rel="stylesheet" type="text/css" />
+    <link href="https://d3rqem538l0q4a.cloudfront.net/bundles/styles.min.css?v=eacf16da747f71a87e29686d945a02ab"
+        rel="stylesheet" type="text/css" />
+    <script src="https://d3rqem538l0q4a.cloudfront.net/Scripts/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="https://d3rqem538l0q4a.cloudfront.net/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script crossorigin="anonymous"
+        src="https://d3rqem538l0q4a.cloudfront.net/bundles/scripts/kendo.min.js?v=50f55bff6d5bf26c7d772ad5697ff0b3"
+        type="text/javascript"></script>
+    <script crossorigin="anonymous"
+        src="https://d3rqem538l0q4a.cloudfront.net/bundles/scripts/thirdparty.min.js?v=6153eddfab6732710d57e673167510bb"
+        type="text/javascript"></script>
+    <script crossorigin="anonymous"
+        src="https://d3rqem538l0q4a.cloudfront.net/bundles/scripts.min.js?v=6a97671407c6c2073e81fcc94302aa66"
+        type="text/javascript"></script>
+
+
+    <script>
+
+        (function () {
+            $.InsWeb3.FixedBars.adjustForBanner = false;
+            $.InsWeb3.FixedBars.bannerHeight = 0;
+            $(document).ready(function () {
+                $.InsWeb3.coreInit();
+            });
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        $.InsWeb3.localization = {};
+
+        var scriptsVersion = $.InsWeb3.Utils.getBundleVersion('scripts');
+        if (scriptsVersion) {
+            scriptsVersion = '?v=' + scriptsVersion;
+        }
+        $.ajax({
+            type: 'GET',
+            url: "/Localization/en-US" + scriptsVersion,
+            async: false,
+            success: function (localization) {
+                var loc = {};
+                if (localization != null) {
+                    for (var property in localization) {
+                        loc[property] = $.InsWeb3.Utils.html2Utf(localization[property]);
+                    }
+                }
+                $.InsWeb3.localization = loc;
+            }
+        });
+
+        $.InsWeb3.translate = function (k) {
+            var result = $.InsWeb3.localization[k];
+            return result ? result : k;
+        }
+    </script>
+
+    <!--[if lt IE 10]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- Required for rendering HTML5 elements in older IE -->
+    <!--[if lt IE 10]><script type="text/javascript" src="/Scripts/jquery.placeholder.js"></script><![endif]-->
+    <!-- Required for placeholder text in inputs in IE -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/Scripts/excanvas.js"></script><![endif]-->
+    <!-- Required For 'Tipped' Popup Tooltips in IE -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TN8P4X');</script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-12978880-4']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- raygun js -->
+    <script type="text/javascript">
+        !function (a, b, c, d, e, f, g, h) {
+        a.RaygunObject = e, a[e] = a[e] || function () {
+            (a[e].o = a[e].o || []).push(arguments)
+        }, f = b.createElement(c), g = b.getElementsByTagName(c)[0],
+            f.async = 1, f.src = d, g.parentNode.insertBefore(f, g), h = a.onerror, a.onerror = function (b, c, d, f, g) {
+                h && h(b, c, d, f, g), g || (g = new Error(b)), a[e].q = a[e].q || [], a[e].q.push({
+                    e: g
+                })
+            }
+        }(window, document, "script", "//cdn.raygun.io/raygun4js/raygun.min.js", "rg4js");
+    </script>
+</head>
+
+<body class="lang-en-US">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <noscript>
+        <p class="noscript"><b>For the full functionality of it is necessary to enable JavaScript in your web
+                browser.</b><br /><a href="http://www.enable-javascript.com/" target="_blank">Click here for step by
+                step instructions on how to enable Javascript in your web browser.</a></p>
+    </noscript>
+
+
+    <div id="wrapper">
+
+
+
+        <style>
+            body #sidebar {
+                top: calc(56px + 30px);
+            }
+
+
+            body #wrapper #main {
+                margin-top: 26px;
+            }
+
+            .row {
+                margin: 0px !important;
+            }
+
+            body #modal-details {
+                top: calc(56px + 30px);
+            }
+        </style>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer = setInterval(showDiv, 5000);
+                var counter = 0;
+
+                function showDiv() {
+                    counter == 1 ? counter = 0 : counter = 1;
+                    $('#UpgradeBtn .upgrade-text')
+                        .stop()
+                        .hide()
+                        .filter(function () { return this.id.match('upgrade-text-' + counter); })
+                        .show();
+                }
+
+                $(document).ready(function () {
+                    var trialOver = 'False';
+                    if (trialOver === 'True') {
+                        var loadModal = function () {
+                            if (!(/^\/.ccount\//).test(window.location.pathname)) {
+                                $('#trialEndedModal').modal('show');
+                            }
+                        };
+
+                        $('#main').on('pjax:complete', loadModal);
+                        loadModal();
+                    }
+                });
+            });
+        </script>
+
+
+
+
+        <header id="header" style='background:rgb(51, 122, 183)'>
+
+            <h1 class="logo ">
+                <a>
+                    <svg style="height: 30px; width: 83px;" height="64.133331" id="svg2" version="1.1"
+                        viewbox="0 0 178.30667 64.133331" width="178.30667" xmlns="http://www.w3.org/2000/svg">
+
+
+
+                    </svg>
+
+
+                </a>
+            </h1>
+
+            <div class=" cursordefault" id="appname" title="CRM">CRM</div>
+            <ol id="user-menu">
+
+                <li class="user-menu-left" rel="tooltip" data-placement="left" title="Add New Item">
+
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                        <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24"
+                            xmlns="http://www.w3.org/2000/svg" style="margin-top: 4px;margin-right: 12px;">
+                            <path
+                                d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu pull-right padding0" role="menu" id="AddNewItemMenu"
+                        style="overflow-y:visible; max-height: none;">
+                        <li>
+                            <ul class="dropdown-menu scrollable-new-item-menu">
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Task"
+                                        href="/Create/Task/"><i class="mdi mdi-clipboard-check mdi-18px"></i> Add New
+                                        Task</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Contact"
+                                        href="/Create/Contact/"><i class="mdi mdi-account-card-details mdi-18px"></i>
+                                        Add New Contact</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Organisation"
+                                        href="/Create/Organisation/"><i class="mdi mdi-domain mdi-18px"></i> Add New
+                                        Organization</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Lead"
+                                        href="/Create/Lead/"><i class="mdi mdi-account-multiple mdi-18px"></i> Add New
+                                        Lead</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Opportunity"
+                                        href="/Create/Opportunity/"><i class="mdi mdi-bullseye mdi-18px"></i> Add New
+                                        Opportunity</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Project"
+                                        href="/Create/Project/"><i class="mdi mdi-hammer mdi-18px"></i> Add New
+                                        Project</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" id="AddNewEmail"><i class="mdi mdi-email mdi-18px"></i> Send
+                                        An Email</a>
+                                </li>
+                                <li>
+                                    <a class="in-entity-modal" data-action="Create" data-entity-type="Event"
+                                        href="/Create/Event/"><i class="mdi mdi-calendar mdi-18px"></i> Add New
+                                        Event</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="user-menu-left" id="notification-block">
+                    <a id="userNotifications" href="javascript:;">
+                        <div class="notifications" title="Notifications">
+                            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="user-menu-left" id="userMenu">
+                    <div class="dropdown">
+                        <a class="pic dropdown-toggle" id="user-menu-dd" data-toggle="dropdown" href="">
+                            <svg fill="#ffffff" width="32" height="32" viewBox="0 0 24 24">
+                                <path
+                                    d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <!--   <li>
+                    <div class="user-menu-upgrade">
+                        <div class="upgrade-section">
+                            <div class="upgrade-image">
+                                <img src="https://d3rqem538l0q4a.cloudfront.net/img/icon-list-contact.png" />
+                            </div>
+                        <div class="upgrade-info">
+                                <div class="upgrade-name">Arpit Patel</div>
+                                <div>Arpitpatel1994@gmail.com</div>
+                                <div>Professional Annual Plan</div>
+                                    <a class="upgrade-btn" href="/Account/SubscriptionSelectPlan">Subscribe Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-basics">
+                    <a href="javascript:;" onclick="pendo.showGuideByName(' Basics Lightbox'); return false;">
+                        <i class="mdi mdi-play-circle-outline mdi-18px"></i> Basics
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="supportlink">
+                        <i class="mdi mdi-help-circle-outline mdi-18px"></i>Help
+                    </a>
+                </li>
+
+                <li><a id="phonesupportMenu" data-backdrop="static" data-toggle="modal" data-target="#modalHolder"><i class="mdi mdi-phone mdi-18px"></i>Phone Support</a></li>
+
+                <li><a href="https://www..com/blog/" target="_blank"><i class="mdi mdi-information-outline mdi-18px"></i>What&#39;s New</a></li>
+                <li><a id="link-keyboardShortcutsModal" href="javascript:;"><i class="mdi mdi-keyboard mdi-18px"></i>Keyboard Shortcuts</a></li>
+                <li class="divider"></li>
+                <li class="tipped-right" title="Arpit Patel&lt;br&gt;Administrator&lt;br&gt;Account Owner&lt;br&gt;Instance: Expert It&lt;br&gt;Instance ID: 1025473"><a href="/users/usersettings"><i class="mdi mdi-account-box mdi-18px"></i>User Settings</a></li>
+                    <li><a href="/Settings"><i class="mdi mdi-settings mdi-18px"></i>System Settings</a></li>
+                    <li class="divider"></li>
+                                    <li><a href="/Account"><i class="mdi mdi-credit-card mdi-18px"></i>Billing &amp; Account</a></li>
+                <li class="divider"></li>-->
+                            <li><a href="/logout"><i class="mdi mdi-logout mdi-18px"></i>Log Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ol>
+            <div id="app-switcher-container" class="collapse">
+                <div id="app-triangle"></div>
+                <div id="app-switcher"></div>
+            </div>
+            <script type="text/javascript">
+
+                $('a[href="#app-switcher-container"]').on('click', function (e) {
+                    var appSwitcher = $('#app-switcher');
+                    if (appSwitcher.children().length === 0) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $.get('/CustomApps/_List', function (string) {
+                            $('#app-switcher').html(string);
+                            $(e.target).click();
+                        });
+                    }
+                });
+
+                $(document).on('click', ins_closeAppSwitcherMenu);
+                $('#header').on('click', ins_closeAppSwitcherMenu);
+
+                function ins_closeAppSwitcherMenu(e) {
+                    var menu_opened = $('#app-switcher-container').hasClass('in');
+                    if (!$(e.target).closest('#app-switcher-container').length && !$(e.target).is('#app-switcher-container') && menu_opened === true) {
+                        $('#app-switcher-container').collapse('toggle');
+                    }
+                }
+
+                function getUserMenuURL() {
+                    var pathArray = window.location.pathname.toLowerCase().split('/');
+                    var pathName = "";
+                    if (pathArray.length == 2) {
+                        pathName += pathArray[1];
+                    }
+                    else if (pathArray.length > 2) {
+                        pathName += pathArray[1] + "/" + pathArray[2];
+                    }
+                    if (pathName == "") {
+                        pathName += "home";
+                    }
+                    window.open("https://support.insight.ly/hc/?utm_medium=product&utm_campaign=profile-menu&utm_source=webapp&utm_content=" + pathName, "_blank");
+                }
+                $('#supportlink').on('click', getUserMenuURL);
+
+
+                document.onreadystatechange = function () {
+                    if (document.readyState === 'complete') {
+                        (function () {
+
+                            if (typeof pendo !== 'undefined' && pendo.events && typeof pendo.events.guidesLoaded === 'function') {
+                                pendo.events.guidesLoaded(function () {
+                                    if (pendo.findGuideByName(' Basics Lightbox') === null) {
+                                        hideBasics();
+                                    }
+                                }).guidesFailed(function () {
+                                    hideBasics();
+                                });
+                            } else {
+                                hideBasics();
+                            }
+
+                            function hideBasics() {
+                                document.getElementsByClassName('menu-basics')[0].setAttribute('hidden', true);
+                            }
+
+                        })();
+                    }
+                }
+
+                $(document).ready(function () {
+                    $('.menu-logout').on('click', function () {
+                        var phone = window.open("", "dialer");
+                        if (phone) {
+                            phone.close();
+                        }
+                    });
+                    $("#phonesupportMenu").click(function () {
+                        $.get("/users/phonesupport").success(function (html) {
+                            $("#modalHolder").html(html);
+                        });
+                    });
+
+                    $.InsWeb3.ToolTips.notificationTooltipSetup();
+
+                    $.InsWeb3.EmailModalController.applyClickHandler($('#AddNewEmail'));
+
+                });
+            </script>
+            <div id="navlink_switch" href="javascript:;"><svg width="24px" height="24px" viewBox="0 0 48 48">
+                    <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+                </svg></div>
+            <div id="search">
+                <form id="globalSearchForm" method="get" action="/search" autocomplete="off">
+                    <i id="search-btn" class="icon-white icon-search"></i>
+                    <input type="text" id="_globalSearch" name="q" placeholder="Search all data...." autocomplete="off"
+                        autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="100" />
+                    <div id="search-results-container">
+                        <div id="search-results">
+                        </div>
+                    </div>
+                </form>
+
+                <script>
+                    $.InsWeb3.Search.init();
+                </script>
+
+            </div>
+        </header>
+
+
+
+        <div id="sidebar" class="">
+            <ul role="navigation" id="sidebar_nav" class="">
+                <li title="Home">
+                    <a id="navlink_home" class="sidebar_navlink" href="#homeTab" data-toggle="tab">
+                        <div>
+                            <div class="navlink_img" id="navlink_home_img"></div>
+                            <span class="">Home</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li title="Tasks">
+                <li title="Accounts">
+                    <a id="navlink_report" class="sidebar_navlink " href="#accountTab" onClick="AccountLoad();"
+                        data-toggle="tab">
+                        <div>
+                            <div class="navlink_img" id="navlink_organisation_img"></div>
+                            <span class="">Accounts</span>
+                        </div>
+                    </a>
+                </li>
+                <li title="Employee">
+                    <a id="navlink_report" class="sidebar_navlink " href="#employeeTab" onClick="empLoad();"
+                        data-toggle="tab">
+                        <div>
+                            <div class="navlink_img" id="navlink_report_img"></div>
+                            <span class="">Employee</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li title="Opportunities">
+                    <a id="navlink_opportunity" class="sidebar_navlink " href="#opportunityTab" data-toggle="tab"
+                        onclick="opportunityLoad();">
+                        <div>
+                            <div class="navlink_img" id="navlink_opportunity_img"></div>
+                            <span class="">Opportunities</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li title="Contacts">
+                    <a id="navlink_contact" class="sidebar_navlink " href="#contactTab" data-toggle="tab"
+                        onclick="contactLoad();">
+                        <div>
+                            <div class="navlink_img" id="navlink_contact_img"></div>
+                            <span class="">Contacts</span>
+                        </div>
+                    </a>
+                </li>
+
+
+
+
+                <li title="Leads">
+                    <a id="navlink_lead" class="sidebar_navlink " href="#leadsTab" data-toggle="tab"
+                        onclick="leadLoad();">
+                        <div>
+                            <div class="navlink_img" id="navlink_lead_img"></div>
+                            <span class="">Leads</span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div id="contactTab" class="tab tab-pane ">
+                <div id="main" class=>
+
+
+                    <div id="main-container" class="list-view contact">
+                        <div id="content" class="">
+                            <header class="head-list">
+                                <div id="default_controls">
+                                    <div class="pull-right" id="AddNewButton">
+                                        <a class="btn in-entity-modal" data-toggle="modal" href="#contactModal"
+                                            data-entity-type="Contact" data-action="Create">
+                                            New Contact
+                                        </a>
+                                    </div>
+                                    <div class="pull-right right10">
+
+                                        <div class="pull-right right10">
+                                            <div class="btn-group right10" id="tagActionDropdown"
+                                                style="display: none;">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="Tag Actions">
+                                                    <i class="mdi mdi-tag mdi-19px"></i> <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu  pull-right">
+                                                    <li class="disabled"><a href="javascript:;" title="Tag Actions">Tag
+                                                            Actions</a></li>
+                                                    <li><a href="javascript:;" id="deleteTag" title="Delete This Tag"><i
+                                                                class="mdi mdi-18px  mdi-delete"></i> Delete This
+                                                            Tag</a></li>
+                                                    <li><a href="javascript:;" id="renameTag" title="Rename This Tag"><i
+                                                                class="mdi mdi-textbox mdi-18px"></i> Rename This
+                                                            Tag</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group" id="btnRefresh">
+                                                <a class="btn" id="refreshList" title="Refresh List"><i
+                                                        class="mdi mdi-refresh mdi-19px"></i></a>
+                                            </div>
+                                            <div class="btn-group" id="btnControls">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="List View Controls"><i class="icon-cog"></i> <span
+                                                        class="caret"></span></a>
+                                                <!--Menu items are set on demand via ins.buttonBar.js-->
+                                            </div>
+                                            <div class="btn-group" id="btnFilters">
+                                                <a class="btn" id="toggleFilters" title="Show List View Filters"><i
+                                                        class="icon-filter"></i></a>
+                                            </div>
+
+
+                                            <div class="btn-group">
+                                                <button id="toggleSidebar" type="button" class="btn"
+                                                    title="Show Sidebar"><i class="icon-indent-right"></i></button>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                    <div class="title">
+                                        <div class="btn-group">
+                                            <button id="btn-list-title" class="btn  " title="">
+                                                All Contacts
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                            </header>
+                        </div>
+                        <div id="main-content" class="contact">
+
+                            <div class="entity-list" id="entity-list">
+
+                                <table class="table table-respnosive">
+
+                                    <thead class="table" style="background-color: 1b213b ">
+                                        <tr style="  font-weight:bold ; ">
+
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Account</th>
+                                            <th>Job Title</th>
+                                            <th>Function</th>
+                                            <th>Department</th>
+                                            <th>Phone</th>
+                                            <th>City</th>
+                                            <th>Fax</th>
+                                            <th>Mobile</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="contactTable">
+
+
+                                    </tbody>
+
+
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="leadsTab" class="tab tab-pane ">
+                <div id="main" class=>
+
+
+                    <div id="main-container" class="list-view contact">
+                        <div id="content" class="">
+                            <header class="head-list">
+                                <div id="default_controls">
+                                    <div class="pull-right" id="AddNewButton">
+                                        <a class="btn in-entity-modal" data-toggle="modal" href="#leadModal"
+                                            data-entity-type="Contact" data-action="Create">
+                                            New Lead
+                                        </a>
+                                    </div>
+                                    <div class="pull-right right10">
+
+                                        <div class="pull-right right10">
+                                            <div class="btn-group right10" id="tagActionDropdown"
+                                                style="display: none;">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="Tag Actions">
+                                                    <i class="mdi mdi-tag mdi-19px"></i> <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu  pull-right">
+                                                    <li class="disabled"><a href="javascript:;" title="Tag Actions">Tag
+                                                            Actions</a></li>
+                                                    <li><a href="javascript:;" id="deleteTag" title="Delete This Tag"><i
+                                                                class="mdi mdi-18px  mdi-delete"></i> Delete This
+                                                            Tag</a></li>
+                                                    <li><a href="javascript:;" id="renameTag" title="Rename This Tag"><i
+                                                                class="mdi mdi-textbox mdi-18px"></i> Rename This
+                                                            Tag</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group" id="btnRefresh">
+                                                <a class="btn" id="refreshList" title="Refresh List"><i
+                                                        class="mdi mdi-refresh mdi-19px"></i></a>
+                                            </div>
+                                            <div class="btn-group" id="btnControls">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="List View Controls"><i class="icon-cog"></i> <span
+                                                        class="caret"></span></a>
+                                                <!--Menu items are set on demand via ins.buttonBar.js-->
+                                            </div>
+                                            <div class="btn-group" id="btnFilters">
+                                                <a class="btn" id="toggleFilters" title="Show List View Filters"><i
+                                                        class="icon-filter"></i></a>
+                                            </div>
+
+
+                                            <div class="btn-group">
+                                                <button id="toggleSidebar" type="button" class="btn"
+                                                    title="Show Sidebar"><i class="icon-indent-right"></i></button>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                    <div class="title">
+                                        <div class="btn-group">
+                                            <button id="btn-list-title" class="btn  " title="">
+                                                All Leads
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                            </header>
+                        </div>
+                        <div id="main-content" class="contact">
+
+                            <div class="entity-list" id="entity-list">
+
+                                <table class="table table-respnosive">
+
+                                    <thead class="table" style="background-color: 1b213b ">
+                                        <tr style="font-weight:bold ; ">
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Lead Name</th>
+                                            <th scope="col">Opportunity Name</th>
+                                            <th scope="col">Account</th>
+                                            <th scope="col">Contact</th>
+                                            <th scope="col">CreatedBy</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="leadTable">
+
+
+                                    </tbody>
+
+
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="accountTab" class="tab tab-pane ">
+                <div id="main" class=>
+
+
+                    <div id="main-container" class="list-view contact">
+                        <div id="content" class="">
+                            <header class="head-list">
+                                <div id="default_controls">
+                                    <div class="pull-right" id="AddNewButton">
+                                        <a class="btn in-entity-modal" data-toggle="modal" href="#accountModal"
+                                            data-entity-type="Contact" data-action="Create">
+                                            New Account
+                                        </a>
+                                    </div>
+                                    <div class="pull-right right10">
+
+                                        <div class="pull-right right10">
+                                            <div class="btn-group right10" id="tagActionDropdown"
+                                                style="display: none;">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="Tag Actions">
+                                                    <i class="mdi mdi-tag mdi-19px"></i> <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu  pull-right">
+                                                    <li class="disabled"><a href="javascript:;" title="Tag Actions">Tag
+                                                            Actions</a></li>
+                                                    <li><a href="javascript:;" id="deleteTag" title="Delete This Tag"><i
+                                                                class="mdi mdi-18px  mdi-delete"></i> Delete This
+                                                            Tag</a></li>
+                                                    <li><a href="javascript:;" id="renameTag" title="Rename This Tag"><i
+                                                                class="mdi mdi-textbox mdi-18px"></i> Rename This
+                                                            Tag</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group" id="btnRefresh">
+                                                <a class="btn" id="refreshList" title="Refresh List"><i
+                                                        class="mdi mdi-refresh mdi-19px"></i></a>
+                                            </div>
+                                            <div class="btn-group" id="btnControls">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="List View Controls"><i class="icon-cog"></i> <span
+                                                        class="caret"></span></a>
+                                                <!--Menu items are set on demand via ins.buttonBar.js-->
+                                            </div>
+                                            <div class="btn-group" id="btnFilters">
+                                                <a class="btn" id="toggleFilters" title="Show List View Filters"><i
+                                                        class="icon-filter"></i></a>
+                                            </div>
+
+
+                                            <div class="btn-group">
+                                                <button id="toggleSidebar" type="button" class="btn"
+                                                    title="Show Sidebar"><i class="icon-indent-right"></i></button>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                    <div class="title">
+                                        <div class="btn-group">
+                                            <button id="btn-list-title" class="btn " title="">
+                                                All Accounts
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                            </header>
+                        </div>
+                        <div id="main-content" class="contact">
+
+                            <div class="entity-list" id="entity-list">
+
+                                <table class="table table-respnosive">
+
+                                    <thead class="table" style="background-color: 1b213b ">
+                                        <tr style="font-weight:bold ; ">
+                                            <th>Name</th>
+                                            <th>Prospect</th>
+                                            <th>ParentAccount</th>
+                                            <th>Website</th>
+                                            <th>Account Category</th>
+                                            <th>Vertical</th>
+                                            <th>Country</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                            <th>Owner</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="accountTable">
+
+
+                                    </tbody>
+
+
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="opportunityTab" class="tab tab-pane ">
+                <div id="main">
+
+
+                    <div id="main-container" class="list-view contact">
+                        <div id="content" class="">
+                            <header class="head-list">
+                                <div id="default_controls">
+                                    <div class="pull-right" id="AddNewButton">
+                                        <a class="btn in-entity-modal" data-toggle="modal" href="#oppModal"
+                                            data-entity-type="Contact" data-action="Create">
+                                            New Opportunity
+                                        </a>
+                                    </div>
+                                    <div class="pull-right right10">
+
+                                        <div class="pull-right right10">
+                                            <div class="btn-group right10" id="tagActionDropdown"
+                                                style="display: none;">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="Tag Actions">
+                                                    <i class="mdi mdi-tag mdi-19px"></i> <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu  pull-right">
+                                                    <li class="disabled"><a href="javascript:;" title="Tag Actions">Tag
+                                                            Actions</a></li>
+                                                    <li><a href="javascript:;" id="deleteTag" title="Delete This Tag"><i
+                                                                class="mdi mdi-18px  mdi-delete"></i> Delete This
+                                                            Tag</a></li>
+                                                    <li><a href="javascript:;" id="renameTag" title="Rename This Tag"><i
+                                                                class="mdi mdi-textbox mdi-18px"></i> Rename This
+                                                            Tag</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group" id="btnRefresh">
+                                                <a class="btn" id="refreshList" title="Refresh List"><i
+                                                        class="mdi mdi-refresh mdi-19px"></i></a>
+                                            </div>
+                                            <div class="btn-group" id="btnControls">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="List View Controls"><i class="icon-cog"></i> <span
+                                                        class="caret"></span></a>
+                                                <!--Menu items are set on demand via ins.buttonBar.js-->
+                                            </div>
+                                            <div class="btn-group" id="btnFilters">
+                                                <a class="btn" id="toggleFilters" title="Show List View Filters"><i
+                                                        class="icon-filter"></i></a>
+                                            </div>
+
+
+                                            <div class="btn-group">
+                                                <button id="toggleSidebar" type="button" class="btn"
+                                                    title="Show Sidebar"><i class="icon-indent-right"></i></button>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                    <div class="title">
+                                        <div class="btn-group">
+                                            <button id="btn-list-title" class="btn " title="">
+                                                All Opportunities
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                            </header>
+                        </div>
+                        <div id="main-content" class="contact">
+
+                            <div class="entity-list" id="entity-list">
+
+                                <table class="table table-respnosive">
+
+                                    <thead class="table" style="background-color: 1b213b ">
+                                        <tr style="  font-weight:bold ; ">
+
+                                            <thead class="table" style="background-color: 1b213b ">
+                                                <tr style="font-weight:bold ; ">
+                                                    <th>Name</th>
+                                                    <th>Account</th>
+                                                    <th>primarycontact</th>
+                                                    <th>source</th>
+                                                    <th>ExceptedValue</th>
+
+                                                    <th>salescycle</th>
+                                                    <th>salesphase</th>
+                                                    <th>Probability</th>
+                                                    <th>forecastcategory</th>
+                                                    <th>category</th>
+                                                    <th>owner</th>
+                                                </tr>
+                                            </thead>
+                                    <tbody id="opportunityTable">
+
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="employeeTab" class="tab tab-pane ">
+
+                <div id="main" class=>
+
+
+                    <div id="main-container" class="list-view contact">
+                        <div id="content" class="">
+                            <header class="head-list">
+                                <div id="default_controls">
+                                    <!--  <div class="pull-right" id="AddNewButton">
+                                    <a class="btn in-entity-modal" href="/Create/Contact/"
+                                       data-entity-type="Contact"
+                                       data-action="Create">
+                                        New Employee
+                                    </a>
+                            </div>-->
+                                    <div class="pull-right right10">
+
+                                        <div class="pull-right right10">
+                                            <div class="btn-group right10" id="tagActionDropdown"
+                                                style="display: none;">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="Tag Actions">
+                                                    <i class="mdi mdi-tag mdi-19px"></i> <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu  pull-right">
+                                                    <li class="disabled"><a href="javascript:;" title="Tag Actions">Tag
+                                                            Actions</a></li>
+                                                    <li><a href="javascript:;" id="deleteTag" title="Delete This Tag"><i
+                                                                class="mdi mdi-18px  mdi-delete"></i> Delete This
+                                                            Tag</a></li>
+                                                    <li><a href="javascript:;" id="renameTag" title="Rename This Tag"><i
+                                                                class="mdi mdi-textbox mdi-18px"></i> Rename This
+                                                            Tag</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="btn-group" id="btnRefresh">
+                                                <a class="btn" id="refreshList" title="Refresh List"><i
+                                                        class="mdi mdi-refresh mdi-19px"></i></a>
+                                            </div>
+                                            <div class="btn-group" id="btnControls">
+                                                <a class="btn dropdown-toggle" data-toggle="dropdown"
+                                                    title="List View Controls"><i class="icon-cog"></i> <span
+                                                        class="caret"></span></a>
+                                                <!--Menu items are set on demand via ins.buttonBar.js-->
+                                            </div>
+                                            <div class="btn-group" id="btnFilters">
+                                                <a class="btn" id="toggleFilters" title="Show List View Filters"><i
+                                                        class="icon-filter"></i></a>
+                                            </div>
+
+
+                                            <div class="btn-group">
+                                                <button id="toggleSidebar" type="button" class="btn"
+                                                    title="Show Sidebar"><i class="icon-indent-right"></i></button>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                    <div class="title">
+                                        <div class="btn-group">
+                                            <button id="btn-list-title" class="btn" title="">
+                                                All Employees
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                            </header>
+                        </div>
+                        <div id="main-content" class="contact">
+
+                            <div class="entity-list" id="entity-list">
+
+                                <table class="table table-respnosive">
+
+                                    <thead class="table" style="background-color: 1b213b ">
+                                        <tr style="font-weight:bold ; ">
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Mobile</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Manager</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="empTable">
+
+
+                                    </tbody>
+
+
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="homeTab" class="tab tab-pane active ">
+                <div id="main">
+                    <div id="main-container" class="list-view contact">
+                        <header class="head-list">
+                            <div id="default_controls">
+                            
+                                <div class="title">
+                                    <div class="btn-group">
+                                        <button id="btn-list-title" class="btn" title="">
+                                          Dashboard
+                                        </button>
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                        </header>
+                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="modal hide" id="modalHolder" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        </div>
+
+        <footer id="footer">
+
+        </footer>
+
+
+        <div id="accountModal" class="modal hide no-reset" role="dialog" aria-labelledby="modal-form" aria-hidden="true"
+            style="height: auto;">
+            <form method="post" action="/addAccount">
+                <div class="modal-content">
+                    <div class="modal-header"
+                        style="padding-left:0;border-bottom: 1px solid #d2c7c7;margin-bottom: 20px;background-color: #e6e0e094;">
+                        <b class="modal-title" style="font-size:15px;margin-left:9px;">New Account :</b>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+
+
+                        <div class="row">
+
+                            <div class="col-lg-5">
+
+                                <span style="color:red">*</span> Name:
+                            </div>
+
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="nam" style="height:25px;width: 80%;">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group">Prospect:</div>
+                            </div>
+                            <div class="col-lg-7"><input type="checkbox" id="check" name="check" checked>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-5">Parent Account:</div>
+
+                            <div class="col-lg-6"><input type="text" class="form-control" name="paacc"
+                                    style="height:25px;width:95%;"></div>
+                            <div class="col-lg-1" style="margin-left: -31px;"><span class="fa fa-share"></span></div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group">Website:</div>
+                            </div>
+                            <div class="col-lg-7"><input type="text" class="form-control" name="web"
+                                    style="height:25px;width: 80%;"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group"><span style="color:red">*</span>Account Category:</div>
+                            </div>
+                            <div class="col-lg-7"><select
+                                    style="height:25px;width: 80%;border-radius:4px;border: 1px solid #ccc;"
+                                    name="acccat">
+                                    <option>Global</option>
+                                    <option>N-20</option>
+                                    <option>others</option>
+                                    <option>platinum</option>
+                                    <option>T-30</option>
+                                    <option>X-30</option>
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group"><span style="color:red">*</span>Vertical:</div>
+                            </div>
+                            <div class="col-lg-7"><select
+                                    style="height:25px;width: 80%;border-radius:4px;border: 1px solid #ccc;"
+                                    name="vert">
+                                    <option value="" style="display:none;"></option>
+                                    <option>L&amp;T Thales</option>
+                                    <option>L&amp;T Thales common</option>
+                                    <option>GDA IP</option>
+                                    <option>VLSI</option>
+                                    <option>Admin Own</option>
+                                    <option>CE's Office</option>
+                                    <option>Capability Enhancement Group</option>
+                                    <option>Corporate Centre</option>
+                                    <option>Corporate Strategy</option>
+                                    <option>Thales</option>
+                                    <option>CSR</option>
+                                    <option>Analytics &amp; Electric Vehicle</option>
+                                    <option>CTO COMMON</option>
+                                    <option>Global Alliances &amp; Consulting</option>
+                                    <option>M2M &amp; IOT Solutions</option>
+                                    <option>TSIC + EPF</option>
+                                    <option>F&amp;A &amp; legal</option>
+                                    <option>Human Resources System</option>
+                                    <option>Central PMO</option>
+                                    <option>IT Own</option>
+                                    <option>LSM - UK - LLC</option>
+                                    <option>Marketing &amp; Corporate communications</option>
+                                    <option>Corporate Resource Pool</option>
+                                    <option>Operations</option>
+                                    <option>RMG</option>
+                                    <option>Org Investment Initiatives</option>
+                                    <option>Pre- Sales Europe</option>
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group"><span style="color:red">*</span>Country:</div>
+                            </div>
+                            <div class="col-lg-7"><select
+                                    style="height:25px;width: 80%;border-radius:4px;border: 1px solid #ccc; height: auto;"
+                                    name="country">
+                                    <option style="display:none;"></option>
+                                    <option>Arab Emirates</option>
+                                    <option>Afghanisthan</option>
+                                    <option>Albania</option>
+                                    <option>Armenia</option>
+                                    <option>Angola</option>
+                                    <option>Argentina</option>
+                                    <option>Austria</option>
+                                    <option>Australia</option>
+                                    <option>Azerbaijan</option>
+                                    <option>Bosnia</option>
+                                    <option>Bangladesh</option>
+                                    <option>Belgium</option>
+                                    <option>Burkina Faso</option>
+                                    <option>Bulgaria</option>
+                                    <option>Bahrain</option>
+                                    <option>Burundi</option>
+                                    <option>Benin</option>
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group"><span style="color:red">*</span>City:</div>
+                            </div>
+                            <div class="col-lg-7"><input type="text" class="form-control"
+                                    style="height:25px;width: 80%;" name="city"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group">State:</div>
+                            </div>
+                            <div class="col-lg-7"><select
+                                    style="height:25px;width: 80%;border-radius:4px;border: 1px solid #ccc;"
+                                    name="state">
+                                    <option>Ajman</option>
+                                    <option>Abu Zaby [Abu Dhabi]</option>
+                                    <option>Dubayy [Dubai]</option>
+                                    <option>Al Fujayrah</option>
+                                    <option>Ra's al Khaymah</option>
+                                    <option>Ash Shariqah [Sharjah]</option>
+                                    <option>Umm al Qaywayn</option>
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group">Owner:</div>
+                            </div>
+                            <div class="col-lg-6"><input type="text" class="form-control "
+                                    style="height:25px;width:95%;" name="owner"></div>
+                            <div class="col-lg-1" style="margin-left: -31px;"><span class="fa fa-share"></span></div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </form>
+            <!--<div class="modal-footer">
+        <img class="spinnerholder" style="display: none; margin-right: 20px;" src="/img/spinner.gif">
+        <button class="btn" data-dismiss="modal" aria-hidden="true" id="btnCancel">Cancel</button>
+        <button class="btn" id="btn-previous" style="display: none;">Previous</button>
+        <button class="btn" id="btnSaveAndNew" style="display: none;">Save &amp; New</button>
+        <button class="btn btn-primary" id="btn-save-and-return" style="display: none;">Save &amp; Return</button>
+        <button class="btn btn-primary" id="btn-save">Save</button>
+    </div>-->
+        </div>
+        <div id="leadModal" class="modal hide no-reset" role="dialog" aria-labelledby="modal-form" aria-hidden="true"
+            style="height: auto;">
+            <div class="modal-content">
+                <div class="modal-header"
+                    style="padding-left:0;border-bottom: 1px solid #d2c7c7;margin-bottom: 20px;background-color: #e6e0e094;">
+                    <b class="modal-title" style="font-size:15px;margin-left:9px;">New Lead :</b>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form method="post" action="/addAccount">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <label class="control-label col-sm-12" for="name">Tittle:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-group" id="text" name="title"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <label class="control-label col-sm-12" for="name">Company:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-group" id="text" name="company"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <label class="control-label col-sm-12" for="name">Contact First Name:</label></div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="text" name="first_name"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <label class="control-label col-sm-12" for="name">Contact Last Name:</label></div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-group" id="text" placeholder=""
+                                    name="last_name"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group col-sm-12">
+                                    <label for="sel1">Status:</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="drop" name="status">
+                                    <option>Accepted</option>
+                                    <option>open</option>
+                                    <option>Declined</option>
+                                    <option>Qualified</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group col-sm-12">
+                                    <label for="sel1">Qualification Level :</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="sel1" name="qul" style="width:201px;">
+                                    <option>Cold</option>
+                                    <option>Hot</option>
+                                    <option>Warm</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group col-sm-12">
+                                    <label for="sel1">Source:</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <select class="form-control" name=" source">
+                                    <option>Campaign</option>
+                                    <option>External Party </option>
+                                    <option>Road show</option>
+                                    <option>Current Account</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group col-sm-12">
+                                    <label for="sel1">Category:</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="drop" name="category">
+                                    <option>Consulting</option>
+                                    <option>Service</option>
+                                    <option>Solution</option>
+                                    <option>Staffing</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group col-sm-12">
+                                    <label for="sel1">Priority:</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="drop" name="priority">
+                                    <option>Immedaite</option>
+                                    <option>Low</option>
+                                    <option>Normal</option>
+                                    <option>Urgent</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-12" for="name">Owner:</label></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="text" placeholder="" name="owner"></div>
+                        </div>
+
+
+
+                </div>
+                </form>
+
+
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+        <div id="oppModal" class="modal hide no-reset" role="dialog" aria-labelledby="modal-form" aria-hidden="true"
+            style="height: auto;">
+            <form method="post" action="/addOpportunity">
+                <div class="modal-content">
+                    <div class="modal-header"
+                        style="padding-left:0;border-bottom: 1px solid #d2c7c7;margin-bottom: 20px;background-color: #e6e0e094;">
+                        <b class="modal-title" style="font-size:15px;margin-left:9px;">Lead To Opportunity :</b>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+
+
+                        <div class="form-group row">
+
+                            <div class="col-sm-2"></div>
+
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm" ;>Name
+                                    :</label></div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                                    placeholder="" name="Name">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm ">Account
+                                :</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                                    placeholder="" name="Account">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm" ;>Primary
+                                Contact :</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                                    placeholder="" name="PrimaryContact">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm" ;>Source
+                                :</label>
+                            <div class="col-sm-6">
+                                <select class="strike" id="sel1" style="height:22px" name="Source">
+                                    <option>Current Account</option>
+                                    <option>External Party</option>
+                                    <option>Idention Workshop</option>
+                                    <option>Prospecting</option>
+                                    <option>Roadshow</option>
+                                    <option>Telephone Enquiry</option>
+                                    <option>Trade Fair</option>
+                                    <option>Website</option>
+                                    <option>Campaign</option>
+
+                                </select>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-sm-12 col-form-label col-form-label-sm"
+                                    ;>Excepted value :</label></div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                                    placeholder="" style="width: 145px;" name="Exceptedvalue">
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="strike" id="sel1" style=" width: 55px;float: right;margin-right: 82%;">
+                                    <option>AUD</option>
+                                    <option>EUR</option>
+                                    <option>GBP</option>
+                                    <option>INR</option>
+                                    <option>USD</option>
+                                    <option>YEN</option>
+
+                                </select>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm" ;>Start Date
+                                :</label>
+                            <div class="col-sm-6">
+                                <input type="date" id="convertstart" class="form-control"
+                                    style="width:79%; height:22px; padding:0px 0px;" name="StartDate">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Closing Date
+                                :</label>
+                            <div class="col-sm-6">
+                                <input type="date" id="convertstart" class="form-control"
+                                    style="width:79%; height:22px; padding:0px 0px;" name="ClosingDate">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Sales Cycle
+                                :</label>
+                            <div class="col-sm-6">
+                                <select class="strike" id="sel1" style="height:22px" name="SalesCycle">
+                                    <option>New Business</option>
+                                    <option>Repeat Business</option>
+
+                                </select>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Sales phase
+                                :</label>
+                            <div class="col-sm-6">
+                                <select class="strike" id="sel1" style="height:22px" name="Salesphase">
+                                    <option>10% - Ideation</option>
+                                    <option>25% - Qualified Opportunity </option>
+                                    <option>50% - Proposal</option>
+                                    <option>80% - Potential Order</option>
+                                    <option>90% - Order</option>
+                                    <option>100% - Execution</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Probability
+                                :</label>
+                            <div class="col-sm-6">
+                                <input type="text" id="convertprobability" class="form-control" name="Probability">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Publish to
+                                Forecast :</label>
+                            <div class="col-sm-6">
+                                <input type="checkbox" id="convertpublish" name="PublishtoForecast">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Forecast
+                                Category :</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="convertforecast" value="Pipeline"
+                                    name="ForecastCategory">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Category
+                                :</label>
+                            <div class="col-sm-6">
+                                <select class="strike" id="convertcategory" style="height:22px" name="Category">
+                                    <option>Consulting</option>
+                                    <option>Intellectual Property</option>
+                                    <option>Service</option>
+                                    <option>Solution</option>
+                                    <option>Staffing</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-3" style="font-size: 13px">
+                                <span style="color: red;">*</span>Owner :</div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                                    placeholder="" name="Owner">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Note :</label>
+                            <div class="col-sm-6">
+                                <textarea rows="3" cols="22" id="convertnote" class="form-control" style="width:81%"
+                                    name="Note"></textarea>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <!--<div class="modal-footer">
+        <img class="spinnerholder" style="display: none; margin-right: 20px;" src="/img/spinner.gif">
+        <button class="btn" data-dismiss="modal" aria-hidden="true" id="btnCancel">Cancel</button>
+        <button class="btn" id="btn-previous" style="display: none;">Previous</button>
+        <button class="btn" id="btnSaveAndNew" style="display: none;">Save &amp; New</button>
+        <button class="btn btn-primary" id="btn-save-and-return" style="display: none;">Save &amp; Return</button>
+        <button class="btn btn-primary" id="btn-save">Save</button>
+    </div>-->
+    </div>
+    <!--<div class="modal-footer">
+    <img class="spinnerholder" style="display: none; margin-right: 20px;" src="/img/spinner.gif">
+    <button class="btn" data-dismiss="modal" aria-hidden="true" id="btnCancel">Cancel</button>
+    <button class="btn" id="btn-previous" style="display: none;">Previous</button>
+    <button class="btn" id="btnSaveAndNew" style="display: none;">Save &amp; New</button>
+    <button class="btn btn-primary" id="btn-save-and-return" style="display: none;">Save &amp; Return</button>
+    <button class="btn btn-primary" id="btn-save">Save</button>
+</div>-->
+    </div>
+    </div>
+    <div id="modal-details">
+        <span id="position"></span>
+        <div id="dragbar"></div>
+        <div id="modal-close-tab" title="Close" data-dismiss="modal"><i class="icon-chevron-right"></i></div>
+        <div id="modal-details-body" class="modal-body blade-body">
+            <div id="modal-details-body-loading">
+                <div><img class="spinner" src="/img/ajax-loader-white.gif"></div>
+                <div>Loading...</div>
+            </div>
+        </div>
+    </div>
+    <div id="alert-popup" style="display: none">
+        <button type="button" class="close" id="alertClose">&times;</button>
+        <span id="alertContent"></span>
+    </div>
+    <div id="driveOverlay" style="display:none;"></div>
+
+
+
+
+
+
+
+</body>
+
+</html>
